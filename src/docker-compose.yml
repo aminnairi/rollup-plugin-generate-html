@@ -1,6 +1,13 @@
+# using version 3 of the docker-compose API
 version: '3'
+
+# there is only one service for the plugin
 services:
-  node:
+
+  # bundle service to create the plugin
+  bundle:
+    # builds the Dockerfile from the current folder
     build: .
     volumes:
+      # bind the current "dist" folder to the one located inside the container to gather the output bundle
       - ../dist/:/home/node/dist/
