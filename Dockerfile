@@ -6,4 +6,4 @@ COPY . .
 
 COPY .npmrc .
 
-CMD [ "npm", "unpublish", "--force" ]
+CMD [ "npm", "publish" ]
