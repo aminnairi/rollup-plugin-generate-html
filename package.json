@@ -5,8 +5,7 @@
   "homepage": "https://github.com/aminnairi/rollup-plugin-generate-html#readme",
   "bugs": "https://github.com/aminnairi/rollup-plugin-generate-html/issues/",
   "license": "MIT",
-  "main": "dist/rollup-plugin-generate-html.common.js",
-  "module": "dist/rollup-plugin-generate-html.esm.js",
+  "main": "dist/rollup-plugin-generate-html",
   "files": [
     "dist/**/*"
   ],

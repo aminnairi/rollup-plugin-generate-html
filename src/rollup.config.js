@@ -8,11 +8,11 @@ export default {
   output: [
     {
       format: 'es',
-      file: '../dist/rollup-plugin-generate-html.esm.js'
+      file: '../dist/rollup-plugin-generate-html.mjs'
     },
     {
       format: 'cjs',
-      file: '../dist/rollup-plugin-generate-html.common.js'
+      file: '../dist/rollup-plugin-generate-html.js'
     }
   ],
   external: [
