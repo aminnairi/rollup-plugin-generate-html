@@ -5,7 +5,7 @@ import commonjs from 'rollup-plugin-commonjs'
 
 export default {
   // file to be bundled
-  input: 'js/rollup-plugin-generate-html.js',
+  input: 'js/rollup-plugin-generate-html.mjs',
 
   output: [
     // generating a JavaScript module to be used with the ES Module syntax
