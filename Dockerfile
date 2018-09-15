@@ -6,4 +6,4 @@ COPY . .
 
 COPY .npmrc .
 
-CMD [ "npm", "publish" ]
+CMD [ "npm", "publish", "--access=public" ]
