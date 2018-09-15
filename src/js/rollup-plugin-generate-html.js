@@ -19,10 +19,9 @@ export const generateHtml = () => ({
     const data      = pretty(`<!doctype html><head><meta charset='utf-8'><title>My Application</title></head><html><body>${scriptTagsFrom(bundle)}</body></html>`, { ocd: true })
     const encoding  = 'utf-8'
 
-    writeFile(path, data, 'utf-8', error => error && this.error(error))
-    writeFile(__dirname, 'hello', 'utf-8', error => {
+    writeFile(path, data, 'utf-8', error => {
       if (error) {
-        console.log('error')
+        this.error(error)
       }
     })
     console.log('test 2')
