@@ -3,8 +3,13 @@ import { writeFile }  from 'fs'
 
 const pretty = require('pretty')
 
+// will grab the directory out of a full/relative path
 const baseDirectory   = file => file.slice(0, file.lastIndexOf('/'))
+
+// will transform a file path to it's script tag representation
 const fileToScript    = file => `<script src='./${file}'></script>`
+
+// will ensure that all bundle scripts are translated to script tags
 const scriptTagsFrom  = bundle => Object.keys(bundle).map(fileToScript).join('')
 
 export const generateHtml = () => ({
