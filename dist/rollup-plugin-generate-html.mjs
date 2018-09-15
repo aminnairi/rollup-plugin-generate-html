@@ -1,1 +1,1 @@
-import path from"path";import fs from"fs";var pretty=require("pretty"),generateHtml=function(){return{generateBundle:function(e,t){var r=this;e.file;console.log(t),fs.writeFile(path.resolve(__dirname,"../dist/"),"hello","utf-8",function(e){e&&r.error(e)}),console.log("test 3")}}};export{generateHtml};
+import path from"path";import"fs";var pretty=require("pretty"),generateHtml=function(){return{generateBundle:function(e,t){var r=e.file;console.log(path.resolve(r)),console.log("test 4")}}};export{generateHtml};
