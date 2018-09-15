@@ -35,7 +35,14 @@ export default {
   },
 
   plugins: [
-    generateHtml()
+    generateHtml({
+      /**
+       * @description Charactet set used in the meta tag
+       * @type {string}
+       * @default 'utf-8'
+       */
+      charset: 'utf-8'
+    })
   ]
 }
 ```
@@ -54,3 +61,4 @@ export default {
     <script src='./index.js'></script>
   </body>
 </html>
+```
