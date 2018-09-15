@@ -1,6 +1,8 @@
 import { resolve }    from 'path'
 import { writeFile }  from 'fs'
 
+console.log('test')
+
 const pretty = require('pretty')
 
 // will grab the directory out of a full/relative path
