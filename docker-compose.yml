@@ -4,7 +4,7 @@ version: '3'
 # there is only one service for the plugin
 services:
 
-  # bundle service to create the plugin
-  bundle:
+  # service to publish the created plugin to NPM registries
+  publish:
     # builds the Dockerfile from the current folder
     build: .

@@ -4,7 +4,7 @@ version: '3'
 # there is only one service for the plugin
 services:
 
-  # bundle service to create the plugin
+  # service to bundle the plugin
   bundle:
     # builds the Dockerfile from the current folder
     build: .
