@@ -37,7 +37,7 @@ export default {
   plugins: [
     generateHtml({
       /**
-       * @description Charactet set used in the meta tag
+       * @description Character set used in the meta tag
        * @type {string}
        * @default 'utf-8'
        */
