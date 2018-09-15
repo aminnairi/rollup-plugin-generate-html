@@ -24,7 +24,7 @@ $ yarn add @aminnairi/rollup-plugin-generate-html
 
 ```javascript
 // rollup.config.js
-import { generateHtml } from 'rollup-plugin-generate-html'
+import { generateHtml } from '@aminnairi/rollup-plugin-generate-html'
 
 export default {
   input: './src/index.js',
