@@ -1,6 +1,6 @@
 {
   "name": "@aminnairi/rollup-plugin-generate-html",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Automatic HTML Generator",
   "homepage": "https://github.com/aminnairi/rollup-plugin-generate-html#readme",
   "bugs": "https://github.com/aminnairi/rollup-plugin-generate-html/issues/",
