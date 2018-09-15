@@ -5,10 +5,10 @@ import scriptTagsFrom from './scriptTagsFrom'
 
 const pretty = require('pretty')
 
-export const generateHtml = () => ({
+export const generateHtml = ({ charset = 'utf-8' } = {}) => ({
   generateBundle({ file }, bundle) {
     const path      = resolve(baseDirectory(file), 'index.html')
-    const data      = pretty(`<!doctype html><head><meta charset='utf-8'><title>My Application</title></head><html><body>${scriptTagsFrom(bundle)}</body></html>`, { ocd: true })
+    const data      = pretty(`<!doctype html><head><meta charset='${ charset }'><title>My Application</title></head><html><body>${ scriptTagsFrom(bundle) }</body></html>`, { ocd: true })
     const encoding  = 'utf-8'
 
     writeFile(path, data, encoding, error => error && this.error(error))
