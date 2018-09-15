@@ -1,7 +1,6 @@
 import { resolve }    from 'path'
 import { writeFile }  from 'fs'
 
-console.log('test')
 
 const pretty = require('pretty')
 
@@ -21,5 +20,6 @@ export const generateHtml = () => ({
     const encoding  = 'utf-8'
 
     writeFile(path, data, encoding, error => error && this.error(error))
+    console.log('test')
   }
 })
