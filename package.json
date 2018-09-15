@@ -1,0 +1,30 @@
+{
+  "name": "@aminnairi/rollup-plugin-generate-html",
+  "version": "0.1.0",
+  "description": "Automatic HTML Generator",
+  "homepage": "https://github.com/aminnairi/rollup-plugin-generate-html#readme",
+  "bugs": "https://github.com/aminnairi/rollup-plugin-generate-html/issues/",
+  "license": "MIT",
+  "main": "dist/rollup-plugin-generate-html.common.js",
+  "module": "dist/rollup-plugin-generate-html.esm.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aminnairi/rollup-plugin-generate-html.git"
+  },
+  "author": {
+    "name": "Amin NAIRI",
+    "url": "https://github.com/aminnairi/"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "rollup-plugin-html",
+    "rollup-plugin-generate"
+  ],
+  "dependencies": {
+    "pretty": "*"
+  }
+}
