@@ -1,1 +1,1 @@
-import path from"path";import"fs";var pretty=require("pretty"),generateHtml=function(){return{generateBundle:function(e,t){var r=e.file;console.log(path.resolve(r)),console.log("test 4")}}};export{generateHtml};
+import path from"path";import"fs";var pretty=require("pretty"),baseDirectory=function(e){return e.slice(0,e.lastIndexOf("/"))},generateHtml=function(){return{generateBundle:function(e,t){var r=e.file,n=path.resolve(baseDirectory(r),"index.html");console.log(n),console.log("test 4")}}};export{generateHtml};
