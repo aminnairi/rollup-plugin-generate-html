@@ -2,9 +2,22 @@
 
 Automatic HTML Generator
 
+## Summary
+
+* [1. What does it do?]()
+* [2. Installation]()
+  * [2.1 NPM]()
+  * [2.2 Yarn]()
+* [3. Usage]()
+* [4. Example output]()
+* [5. API]()
+
+
 ## 1. What does it do?
 
 This plugin will write an `index.html` file containing all of your bundled scripts.
+
+[Back to summary.](#summary)
 
 ## 2. Installation
 
@@ -14,11 +27,15 @@ This plugin will write an `index.html` file containing all of your bundled scrip
 $ npm install @aminnairi/rollup-plugin-generate-html
 ```
 
+[Back to summary.](#summary)
+
 ### 2.2 Yarn
 
 ```shell
 $ yarn add @aminnairi/rollup-plugin-generate-html
 ```
+
+[Back to summary.](#summary)
 
 ## 3. Usage
 
@@ -40,6 +57,8 @@ export default {
 }
 ```
 
+[Back to summary.](#summary)
+
 ## 4. Example output
 
 ```html
@@ -55,6 +74,8 @@ export default {
   </body>
 </html>
 ```
+
+[Back to summary.](#summary)
 
 ## 5. API
 
@@ -76,3 +97,5 @@ generateHtml({
   publicPath: '/home/'
 })
 ```
+
+[Back to summary.](#summary)
