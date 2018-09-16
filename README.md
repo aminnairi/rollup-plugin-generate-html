@@ -4,13 +4,13 @@ Automatic HTML Generator
 
 ## Summary
 
-* [1. What does it do?]()
-* [2. Installation]()
-  * [2.1 NPM]()
-  * [2.2 Yarn]()
-* [3. Usage]()
-* [4. Example output]()
-* [5. API]()
+* [1. What does it do?](#1-what-does-it-do)
+* [2. Installation](#2-installation)
+  * [2.1 NPM](#21-npm)
+  * [2.2 Yarn](#22-yarn)
+* [3. Usage](#3-usage)
+* [4. Example output](4-example-output)
+* [5. API](#5-api)
 
 
 ## 1. What does it do?
