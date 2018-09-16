@@ -45,7 +45,7 @@ export default {
 ```html
 <!-- ./dist/index.html -->
 <!doctype html>
-<html>
+<html lang='en-US'>
   <head>
     <meta charset='utf-8'>
     <title>My Application</title>
