@@ -64,9 +64,11 @@ export default {
  * @param {object} configuration The configuration object
  * @param {string} [configuration.charset=utf-8] The character set used in the meta charset tag
  * @param {string} [configuration.title=My Application] The string used in the HTML title tag
+ * @param {string} [configuration.lang=en-US] The string used in the lang attribute of the html tag
  */
 generateHtml({
   charset: 'utf-8',
-  title: 'My Application'
+  title: 'My Application',
+  lang: 'en-US'
 })
 ```
