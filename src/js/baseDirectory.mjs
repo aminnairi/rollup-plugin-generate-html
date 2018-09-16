@@ -6,7 +6,7 @@
 export default function( file ) {
 
   /** @var {string} withoutDotSlash */
-  const withoutDotSlash = file.replace( /\.\/|\//, '' )
+  const withoutDotSlash = file.replace( /^(\.\/|\/)/, '' )
 
   /** @var {number} directorySeparatorIndex */
   const directorySeparatorIndex = withoutDotSlash.indexOf( '/' )
