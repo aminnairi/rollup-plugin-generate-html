@@ -65,12 +65,14 @@ export default {
  * @param {string} [configuration.charset=utf-8] The character set used in the meta charset tag
  * @param {string} [configuration.title=My Application] The string used in the HTML title tag
  * @param {string} [configuration.lang=en-US] The string used in the lang attribute of the html tag
- * @param {string} [configuration.path] The destination where to put the HTML file
+ * @param {string} [configuration.path] The destination where to put the HTML file (default to rollup.output.file base directory)
+ * @param {string} [configuration.publicPath=./] The string added before the script url
  */
 generateHtml({
-  charset: 'utf-8',
-  title: 'My Application',
-  lang: 'en-US',
-  path: '../docs'
+  charset: 'ISO-8859-1',
+  title: 'My Awesome Application',
+  lang: 'fr-FR',
+  path: '../docs',
+  publicPath: '/home/'
 })
 ```
