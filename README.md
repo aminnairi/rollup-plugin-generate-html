@@ -71,6 +71,6 @@ generateHtml({
   charset: 'utf-8',
   title: 'My Application',
   lang: 'en-US',
-  path: '../dist'
+  path: '../docs'
 })
 ```
