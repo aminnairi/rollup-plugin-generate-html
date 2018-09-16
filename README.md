@@ -9,7 +9,7 @@ Automatic HTML Generator
   * [2.1 NPM](#21-npm)
   * [2.2 Yarn](#22-yarn)
 * [3. Usage](#3-usage)
-* [4. Example output](4-example-output)
+* [4. Example output](#4-example-output)
 * [5. API](#5-api)
 
 
