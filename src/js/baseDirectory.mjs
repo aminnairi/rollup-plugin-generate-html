@@ -5,18 +5,16 @@
  */
 export default function( file ) {
 
-  /** @var {string} withoutDotSlash */
-  const withoutDotSlash = file.replace( /^(\.\/|\/)/, '' )
+  const firstLetterIndex = /\w/i.exec( file ).index
 
-  /** @var {number} directorySeparatorIndex */
-  const directorySeparatorIndex = withoutDotSlash.indexOf( '/' )
+  const firstSeparatorIndex = file.indexOf( '/', firstLetterIndex )
 
-  if ( directorySeparatorIndex !== -1 ) {
+  if ( firstSeparatorIndex === -1 ) {
 
-    return withoutDotSlash.slice( 0, directorySeparatorIndex )
+    return file.slice( 0, firstLetterIndex )
 
   }
 
-  return ''
+  return file.slice( 0, firstSeparatorIndex )
 
 }
