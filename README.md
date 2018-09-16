@@ -35,14 +35,7 @@ export default {
   },
 
   plugins: [
-    generateHtml({
-      /**
-       * @description Character set used in the meta tag
-       * @type {string}
-       * @default 'utf-8'
-       */
-      charset: 'utf-8'
-    })
+    generateHtml()
   ]
 }
 ```
@@ -61,4 +54,19 @@ export default {
     <script src='./index.js'></script>
   </body>
 </html>
+```
+
+## 5. API
+
+```javascript
+/**
+ * @description Inject a bundle into an automatically created HTML file
+ * @param {object} configuration The configuration object
+ * @param {string} [configuration.charset=utf-8] The character set used in the meta charset tag
+ * @param {string} [configuration.title=My Application] The string used in the HTML title tag
+ */
+generateHtml({
+  charset: 'utf-8',
+  title: 'My Application'
+})
 ```
