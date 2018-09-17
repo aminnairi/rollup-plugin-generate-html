@@ -2,7 +2,6 @@ import { join, resolve } from 'path'
 import { writeFile } from 'fs'
 import baseDirectory from './baseDirectory'
 import baseFile from './baseFile'
-//import scriptTagsFrom from './scriptTagsFrom'
 
 const pretty = require('pretty')
 
