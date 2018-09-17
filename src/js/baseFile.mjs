@@ -1,3 +1,3 @@
-function baseFile(file) {
+export default function baseFile(file) {
   return file.replace( /^(\.\.\/|\.\/|\/)?(.*?\/)/, '' )
 }
