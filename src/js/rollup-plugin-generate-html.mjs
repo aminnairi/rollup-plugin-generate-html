@@ -1,11 +1,8 @@
 import { join, resolve } from 'path'
 import { writeFile } from 'fs'
 import baseDirectory from './baseDirectory'
+import baseFile from './baseFile'
 //import scriptTagsFrom from './scriptTagsFrom'
-
-function baseFile(file) {
-  return file.replace( /^(\.\.\/|\.\/|\/)?(.*?\/)/, '' )
-}
 
 const pretty = require('pretty')
 
