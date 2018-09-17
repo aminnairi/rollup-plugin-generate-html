@@ -1,4 +1,4 @@
-import { join } from 'path'
+import { join, resolve } from 'path'
 import { writeFile } from 'fs'
 import baseDirectory from './baseDirectory'
 //import scriptTagsFrom from './scriptTagsFrom'
@@ -21,7 +21,7 @@ const pretty = require('pretty')
 export const generateHtml = ({ charset = 'utf-8', title = 'My Application', lang = 'en-US', path, publicPath = './' } = {}) => ({
   generateBundle({ file }) {
     const output    = join(path || baseDirectory(file), 'index.html')
-    const data      = pretty(`<!doctype html><html lang='${ lang }'><head><meta charset='${ charset }'><title>${ title }</title></head><body><script src='${ resolve( publicPath, baseFile( file ) ) }'></script></body></html>`, { ocd: true })
+    const data      = pretty(`<!doctype html><html lang='${ lang }'><head><meta charset='${ charset }'><title>${ title }</title></head><body><script src='${ join( publicPath, baseFile( file ) ) }'></script></body></html>`, { ocd: true })
     const encoding  = 'utf-8'
 
     writeFile(output, data, encoding, error => error && this.error(error))
