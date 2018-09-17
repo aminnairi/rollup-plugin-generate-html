@@ -70,7 +70,7 @@ export default {
     <title>My Application</title>
   </head>
   <body>
-    <script src='./index.js'></script>
+    <script src='index.js'></script>
   </body>
 </html>
 ```
