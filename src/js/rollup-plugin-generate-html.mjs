@@ -20,8 +20,6 @@ const pretty = require('pretty')
  */
 export const generateHtml = ({ charset = 'utf-8', title = 'My Application', lang = 'en-US', path, publicPath = './' } = {}) => ({
   generateBundle({ file }) {
-    console.log(bundle)
-
     const output    = resolve(path || baseDirectory(file), 'index.html')
     const data      = pretty(`<!doctype html><html lang='${ lang }'><head><meta charset='${ charset }'><title>${ title }</title></head><body><script src='${ resolve( publicPath, baseFire( file ) ) }'></script></body></html>`, { ocd: true })
     const encoding  = 'utf-8'
