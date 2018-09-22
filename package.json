@@ -23,6 +23,18 @@
     "rollup-plugin-html",
     "rollup-plugin-generate"
   ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "*",
+    "rollup-plugin-babel": "*",
+    "rollup-plugin-uglify-es": "*",
+    "rollup-plugin-node-resolve": "*",
+    "rollup-plugin-commonjs": "*",
+    "@babel/core":"*",
+    "@babel/preset-env": "*"
+  },
   "dependencies": {
     "pretty": "*"
   }
