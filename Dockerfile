@@ -9,6 +9,3 @@ WORKDIR /home/node/npm/
 
 # copy everything inside the current filesystem folder to the container filesystem
 COPY . .
-
-# publish the scoped package to be accessible publicly
-CMD [ "npm", "publish", "--access=public" ]
