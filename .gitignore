@@ -1,2 +1,8 @@
 # ignoring the NPM configuration file
 .npmrc
+
+# ignoring node packages
+node_modules
+
+# ignoring bash history
+.bash_history
