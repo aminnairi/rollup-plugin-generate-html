@@ -2,6 +2,7 @@ import babel    from 'rollup-plugin-babel'
 import uglify   from 'rollup-plugin-uglify-es'
 import resolve  from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
+import clean    from 'rollup-plugin-cleaner'
 
 export default {
   // file to be bundled
@@ -19,6 +20,9 @@ export default {
   external: [ 'fs', 'path' ],
 
   plugins: [
+    // remove the target directory before generating a new bundle
+    clean({ targets: [ 'dist' ] }),
+
     // helps resolve CommonJS's modules dependencies to be bundled into the final output
     commonjs(),
 
