@@ -3,7 +3,7 @@ import uglify   from 'rollup-plugin-uglify-es'
 import resolve  from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import clean    from 'rollup-plugin-cleaner'
-import license from 'rollup-plugin-license'
+import license  from 'rollup-plugin-license'
 
 export default {
   // file to be bundled
