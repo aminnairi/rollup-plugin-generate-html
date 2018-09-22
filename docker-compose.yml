@@ -10,5 +10,4 @@ services:
     build: .
     # mounting local folders into the container
     volumes:
-      - ./src:/home/node/src
-      - ./dist:/home/node/dist
+      - .:/home/node/rollup-plugin-generate-html
