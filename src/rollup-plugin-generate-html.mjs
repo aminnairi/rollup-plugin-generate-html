@@ -12,7 +12,7 @@ const pretty = require('pretty')
  * @param {string} [configuration.title=My Application] The string used in the HTML title tag
  * @param {string} [configuration.lang=en-US] The string used in the lang attribute of the html tag
  * @param {string} [configuration.path] The destination where to put the HTML file
- * @param {string} [configuration.publicPath=./] The string added before the script url
+ * @param {string} [configuration.publicPath=] The string added before the script url
  */
 export const generateHtml = ({ charset = 'utf-8', title = 'My Application', lang = 'en-US', path, publicPath = './' } = {}) => ({
   generateBundle({ file }) {
