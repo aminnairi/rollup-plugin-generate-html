@@ -27,13 +27,13 @@
     "build": "rollup -c"
   },
   "devDependencies": {
-    "rollup": "*",
-    "rollup-plugin-babel": "*",
-    "rollup-plugin-uglify-es": "*",
-    "rollup-plugin-node-resolve": "*",
-    "rollup-plugin-commonjs": "*",
-    "@babel/core":"*",
-    "@babel/preset-env": "*"
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "rollup": "^0.66.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-uglify-es": "^0.0.1"
   },
   "dependencies": {
     "pretty": "*"
