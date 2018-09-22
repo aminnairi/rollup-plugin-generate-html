@@ -5,7 +5,7 @@ FROM node:slim
 USER node
 
 # will make sure that next commands are issued inside this folder in the container
-WORKDIR /home/node/npm/
+WORKDIR /home/node
 
 # copy everything inside the current filesystem folder to the container filesystem
 COPY . .
