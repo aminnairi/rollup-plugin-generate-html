@@ -5,6 +5,6 @@ version: '3'
 services:
 
   # service to publish the created plugin to NPM registries
-  publish:
+  node:
     # builds the Dockerfile from the current folder
     build: .
