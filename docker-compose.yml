@@ -8,3 +8,7 @@ services:
   node:
     # builds the Dockerfile from the current folder
     build: .
+    # mounting local folders into the container
+    volumes:
+      - ./src:/home/node/src
+      - ./dist:/home/node/dist
