@@ -87,7 +87,7 @@ export default {
  * @param {string} [configuration.title=My Application] The string used in the HTML title tag
  * @param {string} [configuration.lang=en-US] The string used in the lang attribute of the html tag
  * @param {string} [configuration.path] The destination where to put the HTML file (default to rollup.output.file base directory)
- * @param {string} [configuration.publicPath=./] The string added before the script url
+ * @param {string} [configuration.publicPath=] The string added before the script url
  */
 generateHtml({
   charset: 'ISO-8859-1',
