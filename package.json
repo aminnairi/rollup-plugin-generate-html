@@ -24,7 +24,8 @@
     "rollup-plugin-generate"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
