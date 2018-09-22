@@ -1,5 +1,5 @@
 # official node image with the minimum binaries
-FROM node:10.10.0-slim
+FROM node:slim
 
 # will make sure that next commands are issued inside this folder in the container
 WORKDIR /home/node/npm/
