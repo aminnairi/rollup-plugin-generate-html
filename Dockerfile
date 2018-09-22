@@ -5,7 +5,4 @@ FROM node:slim
 USER node
 
 # will make sure that next commands are issued inside this folder in the container
-WORKDIR /home/node
-
-# copy everything inside the current filesystem folder to the container filesystem
-COPY . .
+WORKDIR /home/node/rollup-plugin-generate-html
