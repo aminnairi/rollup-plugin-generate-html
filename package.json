@@ -33,6 +33,7 @@
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-cleaner": "^0.2.0",
     "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-license": "^0.7.0",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-uglify-es": "^0.0.1"
   },
