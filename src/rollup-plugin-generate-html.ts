@@ -60,9 +60,9 @@ export function generateHtml({ charset = 'utf-8', title = 'My Application', lang
       const data      = require('pretty')(`<!doctype html><html lang='${ lang }'><head><meta charset='${ charset }'><title>${ title }</title></head><body><script src='${ join( publicPath, baseFile( file ) ) }'></script></body></html>`, { ocd: true })
       const encoding  = 'utf-8'
 
-      if ( existsSync( baseDirectory( output ) ) ) {
+      if ( existsSync( baseDirectory( file ) ) ) {
 
-        mkdirSync( baseDirectory( output ) ) 
+        mkdirSync( baseDirectory( file ) ) 
 
       }
 
