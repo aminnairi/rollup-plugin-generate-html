@@ -62,13 +62,7 @@ export function generateHtml({ charset = 'utf-8', title = 'My Application', lang
 
       const outputDirectory = resolve( baseDirectory( output ) )
 
-      console.log(outputDirectory)
-
-      if ( existsSync( outputDirectory ) ) {
-
-        mkdirSync( outputDirectory ) 
-
-      }
+      mkdirSync( resolve( 'dist' ) )
 
       // @ts-ignore
       writeFileSync(output, data, encoding)
