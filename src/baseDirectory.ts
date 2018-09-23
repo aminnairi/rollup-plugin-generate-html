@@ -1,3 +1,5 @@
+import { normalize } from 'path'
+
 export default function( file: string = '' ): string {
 
   if ( typeof file !== 'string' ) {
@@ -12,10 +14,10 @@ export default function( file: string = '' ): string {
 
   if ( firstSeparatorIndex === -1 ) {
 
-    return file.slice( 0, firstLetterIndex )
+    return normalize( file.slice( 0, firstLetterIndex ) )
 
   }
 
-  return file.slice( 0, firstSeparatorIndex )
+  return normalize( file.slice( 0, firstSeparatorIndex ) )
 
 }
