@@ -48,7 +48,7 @@ export function generateHtml({ charset = 'utf-8', title = 'My Application', lang
   }
 
   return {
-    generateBundle({ file }: GeneratedBundleOptions): void {
+    buildEnd({ file }: GeneratedBundleOptions): void {
 
       if ( typeof file !== 'string' ) {
 
