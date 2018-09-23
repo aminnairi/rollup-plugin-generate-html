@@ -6,7 +6,7 @@
   "main": "dist/rollup-plugin-generate-html",
   "name": "@aminnairi/rollup-plugin-generate-html",
   "types": "dist/rollup-plugin-generate-html.d.ts",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "files": [
     "dist/**/*"
   ],
