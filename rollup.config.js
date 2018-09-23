@@ -4,10 +4,11 @@ import resolve  from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import clean    from 'rollup-plugin-cleaner'
 import license  from 'rollup-plugin-license'
+import typescript from 'rollup-plugin-typescript2'
 
 export default {
   // file to be bundled
-  input: 'src/rollup-plugin-generate-html.mjs',
+  input: 'src/rollup-plugin-generate-html.ts',
 
   output: [
     // generating a JavaScript module to be used with the ES Module syntax
@@ -29,6 +30,9 @@ export default {
 
     // helps resolve ES Module's modules dependencies to be bundled into the final output
     resolve(),
+
+    // transpile typescript compliant files into javascript
+    typescript({ typescript: require('typescript') }),
 
     // will use the babel.config.js to transpile the input
     babel(),
