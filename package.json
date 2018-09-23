@@ -25,7 +25,7 @@
     "rollup-plugin-generate"
   ],
   "scripts": {
-    "test": "mocha -r ts-node/register test/test.ts",
+    "test": "ts-mocha -p test/tsconfig.json test/**/*.ts",
     "build": "rollup -c"
   },
   "devDependencies": {
@@ -43,6 +43,7 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-typescript2": "^0.17.0",
     "rollup-plugin-uglify-es": "^0.0.1",
+    "ts-mocha": "^2.0.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   },
