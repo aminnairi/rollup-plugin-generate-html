@@ -1,5 +1,5 @@
 import { join, resolve }  from 'path'
-import { writeFileSync, existsSync, mkdirSync }      from 'fs'
+import { writeFileSync, mkdirSync }      from 'fs'
 import baseDirectory      from './baseDirectory'
 import baseFile           from './baseFile'
 
@@ -59,8 +59,6 @@ export function generateHtml({ charset = 'utf-8', title = 'My Application', lang
       const output    = resolve(path || baseDirectory( file ), 'index.html')
       const data      = require('pretty')(`<!doctype html><html lang='${ lang }'><head><meta charset='${ charset }'><title>${ title }</title></head><body><script src='${ join( publicPath, baseFile( file ) ) }'></script></body></html>`, { ocd: true })
       const encoding  = 'utf-8'
-
-      const outputDirectory = resolve( baseDirectory( output ) )
 
       mkdirSync( resolve( 'dist' ) )
 
