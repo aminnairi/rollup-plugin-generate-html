@@ -9,14 +9,15 @@ interface GeneratedBundleOptions {
 }
 
 interface GenerateHtmlOptions {
-  charset?     : string,
-  title?       : string,
-  lang?        : string,
-  path?        : string,
-  publicPath?  : string
+  charset?    : string,
+  title?      : string,
+  lang?       : string,
+  path?       : string,
+  publicPath? : string,
+  id?         : string
 }
 
-export function generateHtml({ charset = 'utf-8', title = 'My Application', lang = 'en-US', path = '', publicPath = '' }: GenerateHtmlOptions = {}): Object {
+export function generateHtml({ charset = 'utf-8', title = 'My Application', lang = 'en-US', path = '', publicPath = '', id }: GenerateHtmlOptions = {}): Object {
 
   if ( typeof charset !== 'string' ) {
 
@@ -59,7 +60,7 @@ export function generateHtml({ charset = 'utf-8', title = 'My Application', lang
 
       const outputDirectory = resolve( baseDirectory( file ) )
       const outputFile      = resolve( outputDirectory, 'index.html' )
-      const data            = require('pretty')(`<!doctype html><html lang='${ lang }'><head><meta charset='${ charset }'><title>${ title }</title></head><body><script src='${ join( publicPath, baseFile( file ) ) }'></script></body></html>`, { ocd: true })
+      const data            = require('pretty')(`<!doctype html><html lang='${ lang }'><head><meta charset='${ charset }'><title>${ title }</title></head><body>${ id ? `<div id='${ id }'></div>` : '' }<script src='${ join( publicPath, baseFile( file ) ) }'></script></body></html>`, { ocd: true })
       const encoding        = 'utf-8'
 
       
