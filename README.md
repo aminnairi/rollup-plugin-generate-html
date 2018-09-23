@@ -87,14 +87,16 @@ export default {
  * @param {string} [configuration.title=My Application] The string used in the HTML title tag
  * @param {string} [configuration.lang=en-US] The string used in the lang attribute of the html tag
  * @param {string} [configuration.path] The destination where to put the HTML file (default to rollup.output.file base directory)
- * @param {string} [configuration.publicPath=] The string added before the script url
+ * @param {string} [configuration.publicPath] The string added before the script url
+ * @param {string} [configuration.id] Will include a div with a specified id attribute, typically for JavaScript frameworks (Vue, React, ...)
  */
 generateHtml({
   charset: 'ISO-8859-1',
   title: 'My Awesome Application',
   lang: 'fr-FR',
   path: '../docs',
-  publicPath: '/home/'
+  publicPath: '/home/',
+  id: 'app'
 })
 ```
 
