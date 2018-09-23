@@ -5,5 +5,5 @@ interface GenerateHtmlOptions {
     path?: string;
     publicPath?: string;
 }
-export declare function generateHtml({ charset, title, lang, path, publicPath }: GenerateHtmlOptions): Object;
+export declare function generateHtml({ charset, title, lang, path, publicPath }?: GenerateHtmlOptions): Object;
 export {};
