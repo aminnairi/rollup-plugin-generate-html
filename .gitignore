@@ -6,3 +6,6 @@ node_modules
 
 # ignoring bash history
 .bash_history
+
+# rollup plugin typescript2 cache folder
+.rpt2_cache
