@@ -1,5 +1,5 @@
 import { join, resolve }  from 'path'
-import { writeFile }      from 'fs'
+import { writeFileSync }      from 'fs'
 import baseDirectory      from './baseDirectory'
 import baseFile           from './baseFile'
 
@@ -48,7 +48,7 @@ export function generateHtml({ charset = 'utf-8', title = 'My Application', lang
   }
 
   return {
-    buildEnd({ file }: GeneratedBundleOptions): void {
+    generateBundle({ file }: GeneratedBundleOptions): void {
 
       if ( typeof file !== 'string' ) {
 
@@ -61,7 +61,7 @@ export function generateHtml({ charset = 'utf-8', title = 'My Application', lang
       const encoding  = 'utf-8'
 
       // @ts-ignore
-      writeFile(output, data, encoding, error => error && this.error(error))
+      writeFileSync(output, data, encoding)
 
     }
   }
