@@ -11,3 +11,7 @@ services:
     # mounting local folders into the container
     volumes:
       - .:/home/node/rollup-plugin-generate-html
+    # prevent the container from stoping after being up
+    stdin_open: true
+    # allow the use of commands inside the container
+    tty: true
