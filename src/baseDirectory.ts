@@ -1,5 +1,11 @@
 export default function( file: string = '' ): string {
 
+  if ( typeof file !== 'string' ) {
+
+    throw TypeError( `first argument expected to be of type string, ${ typeof file } provided` )
+
+  }
+
   const firstLetterIndex = (/\w/i.exec( file ) || { index: 0 }).index
 
   const firstSeparatorIndex = file.indexOf( '/', firstLetterIndex )
