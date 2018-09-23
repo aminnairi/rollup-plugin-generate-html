@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "test": "ts-mocha -p test/tsconfig.json test/**/*.ts",
-    "build": "rollup -c"
+    "build": "yarn test && rollup -c"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
