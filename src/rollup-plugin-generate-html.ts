@@ -1,5 +1,5 @@
 import { join, resolve }  from 'path'
-import { writeFileSync, mkdirSync }      from 'fs'
+import { writeFileSync }      from 'fs'
 import baseDirectory      from './baseDirectory'
 import baseFile           from './baseFile'
 
