@@ -15,7 +15,7 @@ interface GenerateHtmlOptions {
   publicPath?  : string
 }
 
-export function generateHtml({ charset = 'utf-8', title = 'My Application', lang = 'en-US', path = '', publicPath = './' }: GenerateHtmlOptions): Object {
+export function generateHtml({ charset = 'utf-8', title = 'My Application', lang = 'en-US', path = '', publicPath = './' }: GenerateHtmlOptions = {}): Object {
   return {
     generateBundle({ file }: GeneratedBundleOptions): void {
       const output    = resolve(path || baseDirectory(file), 'index.html')
