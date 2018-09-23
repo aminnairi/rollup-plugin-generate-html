@@ -41,6 +41,6 @@ export default {
     uglify(),
 
     // licensing the bundles
-    license({ banner: 'Copyright (c) 2018 Amin NAIRI' })
+    license({ banner: '@copyright 2018 Amin NAIRI\n@license MIT' })
   ]
 }
