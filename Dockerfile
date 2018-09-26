@@ -1,5 +1,5 @@
 # official node image with the minimum binaries
-FROM node:slim
+FROM node:10.0.0-slim
 
 # issueing commands as user "node" instead of "root"
 USER node
