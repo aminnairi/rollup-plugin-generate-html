@@ -1,8 +1,8 @@
 import { join, resolve }                        from 'path'
 import { writeFileSync, mkdirSync, existsSync } from 'fs'
 
-import baseDirectory  from './baseDirectory'
-import baseFile       from './baseFile'
+import baseDirectory from './baseDirectory'
+import { baseFile } from './baseFile'
 
 interface GeneratedBundleOptions {
   file: string
