@@ -9,3 +9,6 @@ node_modules
 
 # rollup plugin typescript2 cache folder
 .rpt2_cache
+
+# yarn error log output
+yarn-error.log
