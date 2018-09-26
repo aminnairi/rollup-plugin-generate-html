@@ -1,14 +1,21 @@
 import { normalize } from 'path'
+import { isString } from './isString'
 
-export const baseDirectory: (file?: string) => string = (file: string = ''): string => {
+type baseDirectory = (file?: string) => string
 
-  if (typeof file !== 'string') {
+export const baseDirectory: baseDirectory = (file: string = ''): string => {
+
+  if (!isString(file)) {
 
     throw TypeError(`first argument expected to be of type string, ${ typeof file } provided`)
 
   }
 
-  const firstLetterIndex: number = (/\w/i.exec(file) || { index: 0 }).index
+  const firstLetter: (RegExpExecArray | null) = /\w/i.exec(file)
+
+  const hasLetter: boolean = firstLetter !== null
+
+  const firstLetterIndex: number = hasLetter ? firstLetter.index : 0
 
   const firstSeparatorIndex: number = file.indexOf('/', firstLetterIndex)
 
