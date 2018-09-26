@@ -9,7 +9,7 @@ import tslint     from 'rollup-plugin-tslint'
 
 export default {
   // file to be bundled
-  input: 'rollupPluginGenerateHtml.ts',
+  input: 'src/rollupPluginGenerateHtml.ts',
 
   output: [
     // generating a JavaScript module to be used with the ES Module syntax
