@@ -1,10 +1,11 @@
-import babel    from 'rollup-plugin-babel'
-import uglify   from 'rollup-plugin-uglify-es'
-import resolve  from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
-import clean    from 'rollup-plugin-cleaner'
-import license  from 'rollup-plugin-license'
+import babel      from 'rollup-plugin-babel'
+import uglify     from 'rollup-plugin-uglify-es'
+import resolve    from 'rollup-plugin-node-resolve'
+import commonjs   from 'rollup-plugin-commonjs'
+import clean      from 'rollup-plugin-cleaner'
+import license    from 'rollup-plugin-license'
 import typescript from 'rollup-plugin-typescript2'
+import tslint     from 'rollup-plugin-tslint'
 
 export default {
   // file to be bundled
@@ -30,6 +31,9 @@ export default {
 
     // helps resolve ES Module's modules dependencies to be bundled into the final output
     resolve(),
+
+    // check all TypeScript file for syntax errors & such
+    tslint(),
 
     // transpile typescript compliant files into javascript
     typescript({ typescript: require('typescript') }),
