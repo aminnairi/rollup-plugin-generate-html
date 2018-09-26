@@ -1,6 +1,6 @@
 {
   "files": [
-    "src/rollup-plugin-generate-html.ts"
+    "src/rollupPluginGenerateHtml.ts"
   ],
   "include": [
     "src"
