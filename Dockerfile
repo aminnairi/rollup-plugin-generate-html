@@ -1,5 +1,5 @@
-# official node image with the minimum binaries
-FROM node:10.0.0-slim
+# official node image mounted on Alpine Linux with the minimum binaries
+FROM node:alpine
 
 # issueing commands as user "node" instead of "root"
 USER node
